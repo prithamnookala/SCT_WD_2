@@ -36,7 +36,7 @@ const Stopwatch = () => {
         clearInterval(intervalRef.current);
       }
     };
-  }, [isRunning, time]);
+  }, [isRunning]);
 
   const handleStartPause = () => {
     setIsRunning(!isRunning);
