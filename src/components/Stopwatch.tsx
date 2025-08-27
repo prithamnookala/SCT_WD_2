@@ -97,11 +97,7 @@ const Stopwatch = () => {
         {/* Main Timer Display */}
         <Card className="bg-gradient-card border-border/50 shadow-card backdrop-blur-sm">
           <div className="p-8 text-center">
-            <div 
-              className={`text-6xl font-mono font-bold text-timer-display transition-all duration-300 ${
-                isRunning ? 'animate-pulse-glow' : ''
-              }`}
-            >
+            <div className="text-6xl font-mono font-bold text-timer-display transition-all duration-300">
               {formatTime(time)}
             </div>
             <div className="text-sm text-muted-foreground mt-2">
